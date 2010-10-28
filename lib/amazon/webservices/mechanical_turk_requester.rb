@@ -76,6 +76,7 @@ class MechanicalTurkRequester < Amazon::WebServices::Util::ConvenienceWrapper
 
   paginate :GetQualificationRequests, :QualificationRequest
 
+  serviceCall :SendTestEventNotification, :SendTestEventNotificationResult
   serviceCall :SetHITTypeNotification, :SetHITTypeNotificationResult
   serviceCall :SetWorkerAcceptLimit, :SetWorkerAcceptLimitResult
   serviceCall :GetWorkerAcceptLimit, :GetWorkerAcceptLimitResult
