@@ -10,10 +10,10 @@ Gem::Specification.new do |s|
 
   s.bindir = 'bin'
   s.has_rdoc = true
+  s.rdoc_options = ['--main', 'README.rdoc']
   s.executables = ['ruby-aws']
-  text_files = = %w(History LICENSE Manifest NOTICE README).map{|n| "#{n}.txt"}
-  s.extra_rdoc_files = text_files
-  s.files = Dir.glob("{bin,lib,samples,test}/**/*") + text_files + ['Rakefile']
+  s.extra_rdoc_files = %w(History.txt LICENSE.txt NOTICE.txt)
+  s.files = Dir.glob("{bin,lib,samples,test}/**/*") + s.extra_rdoc_files + %w(Rakefile README.rdoc)
   s.test_files = Dir.glob("test/**/")
   
   s.homepage = "http://rubyforge.org/projects/ruby-aws/"
