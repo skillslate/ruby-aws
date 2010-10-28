@@ -1,0 +1,7 @@
+Libraries for Amazon Web Services
+Copyright 2007 Amazon Technologies, Inc.
+
+This product includes software developed by Amazon Technologies, Inc.
+
+This was downloaded from rubygems.org as a .gem file, version 1.2.0,
+and modified thereafter by Lawrence Wang at SkillSlate.com.
