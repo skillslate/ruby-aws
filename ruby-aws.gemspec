@@ -1,7 +1,12 @@
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require 'ruby-aws/version'
+
 Gem::Specification.new do |s|
   s.name = "ruby-aws"
   s.rubyforge_project = "ruby-aws"
-  s.version = '1.2.0'
+  s.version = RubyAWS::VERSION
   s.platform = 'ruby'
 
   s.authors = ["David J Parrott"]
