@@ -2,7 +2,7 @@
 # License::   Apache License, Version 2.0
 
 require 'yaml'
-require 'csv'
+# require 'csv'
 require 'amazon/util/hash_nesting'
 
 module Amazon
@@ -39,12 +39,10 @@ class DataReader
       @data = parse_csv( raw_data, "\t" )
     when :YAML
       @data = YAML.load( raw_data ) || {}
-    when :CSV
-      @data = parse_csv( raw_data )
     when :Properties
       @data = parse_properties( raw_data )
     else
-      raise "invalid format.  options are :Tabular, :YAML, :CSV, :Properties"
+      raise "invalid format.  options are :Tabular, :YAML, :Properties"
     end
   end
   
@@ -57,8 +55,6 @@ class DataReader
         generate_csv( @data, force_headers || !existing, "\t" )
       when :YAML
         YAML.dump( @data )
-      when :CSV
-        generate_csv( @data, force_headers || !existing )
       when :Properties
         generate_properties( @data )
       end
