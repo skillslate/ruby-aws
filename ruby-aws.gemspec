@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ['--main', 'README.rdoc']
   s.executables = ['ruby-aws']
   s.extra_rdoc_files = %w(History.txt LICENSE.txt NOTICE.txt)
-  s.files = Dir.glob("{bin,lib,samples,test}/**/*") + s.extra_rdoc_files + %w(Rakefile README.rdoc)
+  s.files = Dir.glob("{bin,lib,samples,test}/**/*") + s.extra_rdoc_files + %w(README.rdoc)
   s.test_files = Dir.glob("test/**/")
   
   s.homepage = "http://rubyforge.org/projects/ruby-aws/"
@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.3.7"
   s.summary = "Ruby libraries for working with Amazon Web Services ( Mechanical Turk )"
 
-  s.add_dependency 'hoe', ['>= 1.3.0']
   s.add_dependency 'highline', ['>= 1.2.7']
 
 end

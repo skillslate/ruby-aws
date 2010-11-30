@@ -57,9 +57,8 @@ you must meet these prerequisites:
       sudo gem install ruby-aws
    and enter in the password to successfully install the Gem)
 
-2. Installation of the ruby-aws gem will prompt to install the following dependent gems 
+2. Installation of the ruby-aws gem will prompt to install the following dependent gem
    if not already installed:
-   * Hoe[http://seattlerb.rubyforge.org/hoe]
    * Highline[http://rubyforge.org/projects/highline]
 
 3. (Optional) Download and expand the corresponding tarball/zip file from the {project
