@@ -13,7 +13,7 @@ module WebServices
 
 class MechanicalTurkRequester < Amazon::WebServices::Util::ConvenienceWrapper
 
-  WSDL_VERSION = "2007-06-21"
+  WSDL_VERSION = "2008-08-02"
 
   ABANDONMENT_RATE_QUALIFICATION_TYPE_ID = "00000000000000000070";
   APPROVAL_RATE_QUALIFICATION_TYPE_ID = "000000000000000000L0";
@@ -73,7 +73,8 @@ class MechanicalTurkRequester < Amazon::WebServices::Util::ConvenienceWrapper
   serviceCall :GetQualificationScore, :Qualification
   serviceCall :UpdateQualificationScore, :UpdateQualificationScoreResult
   serviceCall :RevokeQualification, :RevokeQualificationResult
-
+  serviceCall :DisposeQualificationType, :DisposeQualificationTypeResult
+  
   paginate :GetQualificationRequests, :QualificationRequest
 
   serviceCall :SendTestEventNotification, :SendTestEventNotificationResult
