@@ -2,5 +2,5 @@
 # License::   Apache License, Version 2.0
 
 module RubyAWS
-  VERSION = "1.2.4".freeze
+  VERSION = "1.2.4"
 end
